@@ -96,7 +96,15 @@ nav ul a:hover{color:var(--ink)}
 .btn:active{transform:translate(3px,3px);box-shadow:1px 1px 0 var(--ink)}
 .btn.sm{padding:10px 20px;box-shadow:3px 3px 0 var(--ink)}
 .btn.ghost{background:transparent;color:var(--ink)}
-@media(max-width:720px){nav ul{display:none}}
+.logo,.btn{white-space:nowrap}
+@media(max-width:720px){
+  nav ul{display:none}
+  header{top:8px;margin-top:8px}
+  nav{padding:6px 6px 6px 14px;gap:10px;box-shadow:0 8px 24px -12px #7a4fd455}
+  .logo{font-size:1rem;gap:7px}
+  .logo b{width:24px;height:24px;border-radius:8px;font-size:.8rem}
+  .btn.sm{padding:7px 14px;font-size:.88rem;border-width:1.5px;box-shadow:2px 2px 0 var(--ink)}
+}
 
 /* hero */
 .hero{padding:90px 0 60px;text-align:center}
